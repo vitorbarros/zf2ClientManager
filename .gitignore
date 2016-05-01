@@ -3,3 +3,4 @@ vendor/
 .buildpath
 .project
 .phpintel
+public/node_modules/
