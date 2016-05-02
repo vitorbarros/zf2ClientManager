@@ -1,0 +1,6 @@
+vendor/
+.idea/
+.buildpath
+.project
+.phpintel
+public/node_modules/

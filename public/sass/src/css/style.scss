@@ -1,0 +1,863 @@
+/*fonts*/
+@font-face {
+  font-family: 'Univers-Condensed-Medium';
+  src: url('../fonts/Univers-Condensed-Medium.eot');
+  src: url('../fonts/Univers-Condensed-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-Condensed-Medium.woff2') format('woff2'),
+  url('../fonts/Univers-Condensed-Medium.woff') format('woff'),
+  url('../fonts/Univers-Condensed-Medium.ttf') format('truetype'),
+  url('../fonts/Univers-Condensed-Medium.svg#Univers-Condensed-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Univers-MediumItalic';
+  src: url('../fonts/Univers-MediumItalic.eot');
+  src: url('../fonts/Univers-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-MediumItalic.woff2') format('woff2'),
+  url('../fonts/Univers-MediumItalic.woff') format('woff'),
+  url('../fonts/Univers-MediumItalic.ttf') format('truetype'),
+  url('../fonts/Univers-MediumItalic.svg#Univers-MediumItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Univers-Medium';
+  src: url('../fonts/Univers-Medium.eot');
+  src: url('../fonts/Univers-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-Medium.woff2') format('woff2'),
+  url('../fonts/Univers-Medium.woff') format('woff'),
+  url('../fonts/Univers-Medium.ttf') format('truetype'),
+  url('../fonts/Univers-Medium.svg#Univers-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Univers-Condensed-BoldItalic';
+  src: url('../fonts/Univers-Condensed-BoldItalic.eot');
+  src: url('../fonts/Univers-Condensed-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-Condensed-BoldItalic.woff2') format('woff2'),
+  url('../fonts/Univers-Condensed-BoldItalic.woff') format('woff'),
+  url('../fonts/Univers-Condensed-BoldItalic.ttf') format('truetype'),
+  url('../fonts/Univers-Condensed-BoldItalic.svg#Univers-Condensed-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Univers-Condensed-Bold';
+  src: url('../fonts/Univers-Condensed-Bold.eot');
+  src: url('../fonts/Univers-Condensed-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-Condensed-Bold.woff2') format('woff2'),
+  url('../fonts/Univers-Condensed-Bold.woff') format('woff'),
+  url('../fonts/Univers-Condensed-Bold.ttf') format('truetype'),
+  url('../fonts/Univers-Condensed-Bold.svg#Univers-Condensed-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Univers-BoldItalic';
+  src: url('../fonts/Univers-BoldItalic.eot');
+  src: url('../fonts/Univers-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-BoldItalic.woff2') format('woff2'),
+  url('../fonts/Univers-BoldItalic.woff') format('woff'),
+  url('../fonts/Univers-BoldItalic.ttf') format('truetype'),
+  url('../fonts/Univers-BoldItalic.svg#Univers-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Univers-Bold';
+  src: url('../fonts/Univers-Bold.eot');
+  src: url('../fonts/Univers-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Univers-Bold.woff2') format('woff2'),
+  url('../fonts/Univers-Bold.woff') format('woff'),
+  url('../fonts/Univers-Bold.ttf') format('truetype'),
+  url('../fonts/Univers-Bold.svg#Univers-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans-bold-webfont.eot');
+  src: url('../fonts/opensans-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-bold-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-bold-webfont.woff') format('woff'),
+  url('../fonts/opensans-bold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'open_sansbold_italic';
+  src: url('../fonts/opensans-bolditalic-webfont.eot');
+  src: url('../fonts/opensans-bolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-bolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-bolditalic-webfont.woff') format('woff'),
+  url('../fonts/opensans-bolditalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansextrabold';
+  src: url('../fonts/opensans-extrabold-webfont.eot');
+  src: url('../fonts/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-extrabold-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-extrabold-webfont.woff') format('woff'),
+  url('../fonts/opensans-extrabold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansextrabold_italic';
+  src: url('../fonts/opensans-extrabolditalic-webfont.eot');
+  src: url('../fonts/opensans-extrabolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-extrabolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-extrabolditalic-webfont.woff') format('woff'),
+  url('../fonts/opensans-extrabolditalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url('../fonts/opensans-italic-webfont.eot');
+  src: url('../fonts/opensans-italic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-italic-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-italic-webfont.woff') format('woff'),
+  url('../fonts/opensans-italic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans-light-webfont.eot');
+  src: url('../fonts/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-light-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-light-webfont.woff') format('woff'),
+  url('../fonts/opensans-light-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanslight_italic';
+  src: url('../fonts/opensans-lightitalic-webfont.eot');
+  src: url('../fonts/opensans-lightitalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-lightitalic-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-lightitalic-webfont.woff') format('woff'),
+  url('../fonts/opensans-lightitalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans-regular-webfont.eot');
+  src: url('../fonts/opensans-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-regular-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-regular-webfont.woff') format('woff'),
+  url('../fonts/opensans-regular-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanssemibold';
+  src: url('../fonts/opensans-semibold-webfont.eot');
+  src: url('../fonts/opensans-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-semibold-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-semibold-webfont.woff') format('woff'),
+  url('../fonts/opensans-semibold-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'open_sanssemibold_italic';
+  src: url('../fonts/opensans-semibolditalic-webfont.eot');
+  src: url('../fonts/opensans-semibolditalic-webfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/opensans-semibolditalic-webfont.woff2') format('woff2'),
+  url('../fonts/opensans-semibolditalic-webfont.woff') format('woff'),
+  url('../fonts/opensans-semibolditalic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*fonts*/
+
+/*overide bootstrap*/
+.container{
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 0;
+  padding-left: 0;
+}
+.my-col{
+  padding-right: 0;
+  padding-left: 0;
+}
+.my-row{
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: 0;
+  margin-left: 0;
+}
+.alert-success,
+.alert-warning{
+  background-color: #00bcd4;
+  border: none;
+  box-shadow: none;
+  background-image: none;
+  border-radius: 0;
+  color: #FFFFFF;
+}
+/*overide bootstrap*/
+
+/*Variaveis*/
+$fontDefault: open_sansregular;
+$fontLight: open_sanslight;
+/*Variaveis*/
+
+/*navbar*/
+.header{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  .navbar-default{
+    background-color: transparent;
+    margin-bottom: 0;
+    border: none;
+    -webkit-border-radius:0;
+    -moz-border-radius:0;
+    border-radius:0;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background-image: none;
+    ul{
+      float: right;
+      li{
+        a{
+          font-family: $fontDefault;
+          color: #FFFFFF;
+          font-size: 16px;
+          margin: 20px 10px 20px 10px;
+          padding: 10px;
+          &:hover{
+            color: #FFFFFF;
+            background-color: #00bcd4;
+          }
+          &:visited{
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+}
+/*navbar*/
+
+/*banner blog*/
+.banner-content-blog{
+  height: 267px;
+  .banner-blog{
+    background-image: url("../img/banner2.jpg");
+    width: 100%;
+    height: 380px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    .content-slogan{
+      margin-top: 165px;
+      max-width: 574px;
+      padding: 20px;
+      background-color: #00bcd4;
+      opacity: 0.8;
+      h2{
+        font-family: $fontLight;
+        color: #FFFFFF;
+        font-weight: 100;
+        margin: 0;
+        font-size: 43px;
+        text-shadow: 0 1px 0 rgba(0,0,0,0.45);
+      }
+    }
+  }
+}
+/*banner blog*/
+
+/*banner home*/
+.banner-home{
+  background-image: url("../img/banner3.jpg");
+  width: 100%;
+  height: 729px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  .content-slogan{
+    margin-top: 380px;
+    max-width: 574px;
+    padding: 20px;
+    background-color: #00bcd4;
+    opacity: 0.8;
+    h2{
+      font-family: $fontLight;
+      color: #FFFFFF;
+      font-weight: 100;
+      margin: 0;
+      font-size: 43px;
+      text-shadow: 0 1px 0 rgba(0,0,0,0.45);
+    }
+  }
+}
+.banner-content{
+  height: 649px;
+}
+.servicos{
+  h2{
+    font-family: $fontDefault;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0 60px 0;
+  }
+  h3{
+    font-family: $fontDefault;
+    font-size: 20px;
+    text-align: center;
+    height: 30px;
+  }
+  p{
+    margin: 0;
+    font-family: $fontLight;
+    font-size: 16px;
+    text-align: justify;
+  }
+  .line-service{
+    margin-bottom: 30px;
+  }
+  .icon-home{
+    font-size: 60px;
+    text-align: center;
+    display: block;
+    color: #00bcd4;
+  }
+}
+/*banner home*/
+
+/*banner tecnologias*/
+.banner-tecnologias{
+  background-image: url("../img/banner1.jpg");
+  width: 100%;
+  height: 560px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center top;
+  h2{
+    font-family: $fontDefault;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0;
+  }
+  h3{
+    font-family: $fontDefault;
+    font-size: 20px;
+    text-align: center;
+    height: 30px;
+  }
+  h4{
+    font-family: $fontDefault;
+    text-align: center;
+    color: #000000;
+    height: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  p{
+    text-align: justify;
+    color: #000000;
+    font-family: $fontLight;
+  }
+  .img{
+    height: 110px;
+  }
+  .wp,
+  .laravel{
+    width: 95px;
+    display: block;
+    margin: 0 auto;
+    img{
+      height: 87px;
+      margin-top: 17px;
+      float: left;
+      text-align: center;
+      display: block;
+      clear: both;
+      width: 100%;
+    }
+  }
+}
+/*banner tecnologias*/
+
+/*sobre nos*/
+.sobre-nos{
+  h2{
+    font-family: $fontDefault;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0;
+  }
+  p{
+    font-family: $fontLight;
+    font-size: 19px;
+    text-align: justify;
+  }
+  .team{
+    span{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      font-size: 200px;
+      color: #00bcd4;
+    }
+  }
+}
+.blog{
+  h2{
+    font-family: $fontDefault;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0;
+    color: #333;
+  }
+}
+.contato{
+  h2{
+    font-family: $fontDefault;
+    font-size: 40px;
+    text-align: center;
+    margin: 60px 0;
+    color: #333;
+  }
+}
+
+.contato-fluid{
+  background-color: #00bcd4;
+  margin: 40px 0 0 0;
+  h3{
+    color: #FFFFFF;
+    padding: 10px 0 0 0;
+    font-family: $fontDefault;
+    font-size: 45px;
+    margin-top: 50px;
+  }
+  p{
+    color: #FFFFFF;
+    font-family: $fontLight;
+    margin-bottom: 60px;
+    padding: 4px;
+  }
+  a{
+    color: #FFFFFF;
+    font-family: $fontDefault;
+    font-size: 20px;
+    padding: 20px;
+    border: 1px solid;
+    text-decoration: none;
+    text-transform: none;
+    cursor: pointer;
+    &:hover{
+      background-color: #FFFFFF;
+      color: #00bcd4;
+    }
+  }
+}
+/*sobre nos*/
+
+/*blog na homr*/
+.blog-relative{
+  position: relative;
+  .post-blog-content{
+    min-height: 260px;
+    .filter{
+      transition: all 0.5s ease-in;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      padding: 20px;
+      background-color: #00bcd4;
+      opacity: 0.7;
+      height: 122px;
+      .englobe-content{
+        position: absolute;
+        bottom: 0;
+        min-height: 100px;
+      }
+      &:hover{
+        transition: all 0.5s ease-out;
+        height: 100%;
+      }
+    }
+    h4{
+      color: #fff;
+      font-size: 15px;
+      font-family: $fontDefault;
+      height: 20px;
+      margin: 0;
+    }
+    p{
+      color: #FFFFFF;
+      font-size: 10px;
+      font-family: $fontDefault;
+    }
+  }
+}
+
+/*contato*/
+.contato {
+  p{
+    color: #000;
+    font-family: $fontLight;
+    font-size: 20px;
+    span{
+      textarea{
+        width: 100%;
+        height: 80px;
+      }
+      input{
+        width: 100%;
+      }
+    }
+    input[type='submit']{
+      float: right;
+      border: none;
+      color: #FFFFFF;
+      background-color: #00bcd4;
+      padding: 5px 30px 5px 30px;
+      margin-bottom: 50px;
+    }
+  }
+}
+/*contato*/
+
+/*footer*/
+.footer{
+  background-color: #00bcd4;
+  p{
+    padding: 70px 0 70px 0;
+    margin: 0;
+    color: #FFFFFF;
+    font-family: $fontDefault;
+    font-size: 20px;
+  }
+}
+/*footer*/
+
+/*category blog*/
+.category-blog{
+  margin: 80px 0 80px 0;
+  .post-blog-content{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    min-height: 450px;
+    .filter{
+      transition: all 1s ease-in;
+    }
+  }
+}
+/*category blog*/
+
+/*single-blog*/
+.single-blog{
+  margin-bottom: 80px;
+  h1{
+    font-family: $fontDefault;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+  }
+  .englobe-img{
+    margin: 40px 0 40px 0;
+    img{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  p{
+    font-family: $fontLight;
+    img{
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+/*single-blog*/
+
+.contato-category{
+  margin: 70px 0 0 0;
+}
+
+/*contato*/
+.contato{
+  textarea,
+  input{
+    border-radius: 0;
+    box-shadow: unset;
+    border: 2px solid #00bcd4;
+  }
+}
+/*contato*/
+
+
+/*form*/
+.form{
+  margin: 70px 0 50px 0;
+  .dados-content{
+    border: 1px solid #00bcd4;
+    padding: 10px;
+    min-height: 430px;
+    max-width: 785px;
+    margin: 0 auto;
+    display: block;
+    h3{
+      font-family: $fontLight;
+      color: #00bcd4;
+      font-size: 25px;
+      text-align: center;
+      margin: 0 0 10px 0;
+      height: 70px;
+    }
+    label{
+      font-family: $fontLight;
+      color: #00bcd4;
+    }
+    button,
+    input[type='submit']{
+      border: none;
+      color: #fff;
+      background-color: #00bcd4;
+      padding: 5px 30px;
+      background-image: none;
+      border-radius: 0;
+      float: right;
+      font-family: $fontDefault;
+      text-shadow: none;
+    }
+    p{
+      color: #00bcd4;
+      font-family: $fontLight;
+      text-align: right;
+    }
+    input[type='text'],
+    input[type='password']{
+      border-radius: 0;
+      border: 1px solid #00bcd4;
+      font-family: $fontLight;
+      color: #000;
+    }
+  }
+  a{
+    font-family: $fontLight;
+    color: #00bcd4;
+    font-size: 25px;
+    text-align: center;
+    margin: 0 0 10px 0;
+    height: 70px;
+    border: 1px solid;
+    padding: 10px;
+    text-decoration: none;
+    text-transform: none;
+  }
+  ul{
+    list-style-type: none;
+    padding: 25px 0 25px 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    display: inline-flex;
+    justify-content: space-between;
+    li{
+      display: inline-block;
+    }
+  }
+  .ui-state-active{
+    a{
+      background-color: #00bcd4;
+      color: #FFFFFF;
+      border: 1px solid #00bcd4;
+      text-decoration: none;
+      text-transform: none;
+    }
+  }
+  .tabs{
+    max-width: 785px;
+    margin: 0 auto;
+  }
+}
+
+/*login*/
+.login{
+  margin-top: 70px;
+  .content-login{
+    max-width: 500px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #00bcd4;
+    padding: 10px;
+    margin-bottom: 50px;
+    h3{
+      font-family: $fontLight;
+      color: #00bcd4;
+      font-size: 25px;
+      text-align: center;
+      margin: 0 0 10px 0;
+      height: 70px;
+    }
+    label{
+      font-family: $fontLight;
+      color: #00bcd4;
+    }
+    input[type='submit']{
+      border: none;
+      color: #fff;
+      background-color: #00bcd4;
+      padding: 5px 30px;
+      background-image: none;
+      border-radius: 0;
+    }
+    p{
+      color: #00bcd4;
+      font-family: $fontLight;
+    }
+    input[type='text'],
+    input[type='password']{
+      border-radius: 0;
+      border: 1px solid #00bcd4;
+      font-family: $fontLight;
+      color: #000;
+    }
+  }
+}
+
+/*menu lateral*/
+.dashboard{
+  .menu-lateral{
+    h3{
+      font-family: $fontLight;
+      background-color: #00bcd4;
+      color: #FFFFFF;
+      margin: 0;
+      padding: 10px;
+      cursor: pointer;
+    }
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      li{
+        a{
+          font-family: $fontLight;
+          font-size: 18px;
+          color: #000;
+          display: block;
+          padding: 5px 0 5px 10px;
+          text-decoration: none;
+          text-transform: none;
+          &:hover{
+            color: #FFFFFF;
+            background-color: rgba(0, 188, 212, 0.51);
+            text-decoration: none;
+            text-transform: none;
+          }
+        }
+      }
+    }
+  }
+  .content-dashboard{
+    padding: 0 0 0 20px;
+    .content{
+      padding: 10px;
+      background-color: rgba(0, 188, 212, 0.51);
+    }
+  }
+}
+/*media query*/
+@media (max-width: 767px){
+  .header{
+    .navbar-default{
+      ul{
+        width: 100%;
+        float: none;
+        li{
+          text-align: center;
+        }
+      }
+    }
+  }
+  .servicos{
+    .line-service{
+      max-width: 500px;
+      width: 100%;
+      display: block;
+      margin: 0 auto;
+      div{
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+      }
+    }
+  }
+  .banner-tecnologias{
+    height: 1060px;
+    .img{
+      max-width: 220px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .wp,
+    .laravel{
+      height: 110px;
+      max-width: 95px;
+      width: 100%;
+    }
+    h4{
+      height: 24px;
+      margin: 20px 0 0 0;
+    }
+    p{
+      font-family: $fontDefault;
+    }
+  }
+  .tecnologias{
+    max-width: 500px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    float: none;
+  }
+  .contato-fluid{
+    p,
+    a,
+    h3{
+      text-align: center;
+      display: block;
+      margin: 25px 0 25px 0;
+    }
+  }
+}
+@media (max-width: 471px){
+  .banner-tecnologias {
+    height: 1200px;
+  }
+}
+/*media query*/
