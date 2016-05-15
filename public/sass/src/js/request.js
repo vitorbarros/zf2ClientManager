@@ -19,6 +19,27 @@ function storeClient() {
     });
 }
 
+function storeStudent() {
+    var formData = new FormData($("#storeStudent")[0]);
+
+    $.ajax({
+        type: "POST",
+        url: "/ead/student/store",
+        data: formData,
+        contentType: false,
+        cache: false,
+        processData: false,
+        success: function (data) {
+            alertRequests('success', data, 'alert-student', true);
+        },
+        error: function (data) {
+            clearColorFields();
+            alertRequests('error', data, 'alert-student');
+            colorRequiredFields(data.responseJSON.fields);
+        }
+    });
+}
+
 function authenticate(){
     var formData = new FormData($("#login")[0]);
 

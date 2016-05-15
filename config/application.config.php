@@ -5,8 +5,9 @@ return array(
         'DoctrineModule',
         'DoctrineORMModule',
         'DoctrineDataFixtureModule',
-        'Client',
-        'Login'
+        'Client', //base module
+        'Login',
+        'Ead'
     ),
     'module_listener_options' => array(
         'module_paths' => array(

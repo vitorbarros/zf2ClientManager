@@ -64,10 +64,10 @@ class User extends \Client\Entity\User implements \Doctrine\ORM\Proxy\Proxy
     public function __sleep()
     {
         if ($this->__isInitialized__) {
-            return ['__isInitialized__', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userId', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUsername', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userPassword', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userSalt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userActivationKey', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userStatus', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userCreatedAt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUpdatedAt'];
+            return ['__isInitialized__', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userId', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUsername', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userPassword', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userSalt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userActivationKey', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userStatus', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userCreatedAt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUpdatedAt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'role'];
         }
 
-        return ['__isInitialized__', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userId', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUsername', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userPassword', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userSalt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userActivationKey', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userStatus', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userCreatedAt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUpdatedAt'];
+        return ['__isInitialized__', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userId', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUsername', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userPassword', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userSalt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userActivationKey', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userStatus', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userCreatedAt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'userUpdatedAt', '' . "\0" . 'Client\\Entity\\User' . "\0" . 'role'];
     }
 
     /**
@@ -351,6 +351,28 @@ class User extends \Client\Entity\User implements \Doctrine\ORM\Proxy\Proxy
         $this->__initializer__ && $this->__initializer__->__invoke($this, 'setUserUpdatedAt', []);
 
         return parent::setUserUpdatedAt();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function getRole()
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'getRole', []);
+
+        return parent::getRole();
+    }
+
+    /**
+     * {@inheritDoc}
+     */
+    public function setRole($role)
+    {
+
+        $this->__initializer__ && $this->__initializer__->__invoke($this, 'setRole', [$role]);
+
+        return parent::setRole($role);
     }
 
     /**

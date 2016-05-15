@@ -4,3 +4,6 @@ vendor/
 .project
 .phpintel
 public/node_modules/
+client_manager.sql
+client_manager_db.mwb
+client_manager_db.mwb.bak

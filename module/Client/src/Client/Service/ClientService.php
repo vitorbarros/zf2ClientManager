@@ -19,7 +19,7 @@ class ClientService extends AbstractService
     public function store(array $data, $flush = true)
     {
         //verificando s senha
-        if($data['user_password'] != $data['user_password_confirm']){
+        if ($data['user_password'] != $data['user_password_confirm']) {
             throw new \Exception("<b>'Senha'</b> e <b>'Confirmar senha'</b> não podem ser diferentes");
         }
 
@@ -29,7 +29,7 @@ class ClientService extends AbstractService
         }
 
         //verificando a duplicidade do cpf
-        if ($data['client_cpf']  != null) {
+        if ($data['client_cpf'] != null) {
             $cpfFormated = str_replace("-", "", str_replace("/", "", str_replace(".", "", $data['client_cpf'])));
             $clientCpf = $this->em->getRepository('Client\Entity\Client')->findOneByClientCpf($cpfFormated);
             if ($clientCpf) {
@@ -38,7 +38,7 @@ class ClientService extends AbstractService
         }
 
         //verificando a duplicidade do cnpj
-        if ($data['client_cnpj']  != null) {
+        if ($data['client_cnpj'] != null) {
             $cnpjFormated = str_replace("-", "", str_replace("/", "", str_replace(".", "", $data['client_cnpj'])));
             $clientCnpj = $this->em->getRepository('Client\Entity\Client')->findOneByClientCnpj($cnpjFormated);
             if ($clientCnpj) {
@@ -63,6 +63,7 @@ class ClientService extends AbstractService
 
         //criação do usuário
         $this->entity = 'Client\Entity\User';
+        $data['role'] = $this->em->getRepository('Client\Entity\Role')->findOneByRoleName('client');
         $user = parent::store($data, false);
 
         //criação do endereço

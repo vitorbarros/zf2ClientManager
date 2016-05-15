@@ -75,6 +75,14 @@ class User
      */
     private $userUpdatedAt;
 
+    /**
+     * @var Role
+     *
+     * @ORM\ManyToOne(targetEntity="Client\Entity\Role")
+     * @ORM\JoinColumn(name="role", referencedColumnName="role_id")
+     */
+    private $role;
+
     public function __construct(array $options = array())
     {
         $this->userSalt = base64_encode(Rand::getBytes(8, true));
@@ -226,6 +234,24 @@ class User
     public function setUserUpdatedAt()
     {
         $this->userUpdatedAt = new \DateTime("now");
+        return $this;
+    }
+
+    /**
+     * @return Role
+     */
+    public function getRole()
+    {
+        return $this->role;
+    }
+
+    /**
+     * @param Role $role
+     * @return User
+     */
+    public function setRole($role)
+    {
+        $this->role = $role;
         return $this;
     }
 
